@@ -1,96 +1,177 @@
 {
   "all": {
     "a": {
+      "main": { "$": "auto_text_key", "code":  44, "label": "," },
       "relevant": [
-        { "$": "auto_text_key", "code":  230, "label": "æ" },
-        { "$": "auto_text_key", "code":  227, "label": "ã" },
-        { "$": "auto_text_key", "code":  229, "label": "å" },
-        { "$": "auto_text_key", "code":  257, "label": "ā" },
-        { "$": "auto_text_key", "code":  224, "label": "à" },
-        { "$": "auto_text_key", "code":  225, "label": "á" },
-        { "$": "auto_text_key", "code":  226, "label": "â" },
-        { "$": "auto_text_key", "code":  228, "label": "ä" }
+        { "$": "auto_text_key", "code":  58, "label": ":" },
+        { "$": "auto_text_key", "code":  59, "label": ";" },
+        { "$": "auto_text_key", "code":  124, "label": "|" },
+        { "$": "auto_text_key", "code":  126, "label": "~" },
+        { "$": "auto_text_key", "code":  39, "label": "'" },
+        { "$": "auto_text_key", "code":  34, "label":  "\"" },
+        { "$": "auto_text_key", "code":  96, "label": "`" }
       ]
     },
     "c": {
       "relevant": [
-        { "$": "auto_text_key", "code":  231, "label": "ç" }
+        { "$": "CLIPBOARD_COPY", "code":  -31, "label": "" },
+        { "$": "CLIPBOARD_SELECT_ALL", "code":  -35, "label": "" },
+        { "$": "CLIPBOARD_CUT", "code":  -32, "label": "" }
       ]
     },
     "e": {
       "relevant": [
-        { "$": "auto_text_key", "code":  275, "label": "ē" },
-        { "$": "auto_text_key", "code":  234, "label": "ê" },
-        { "$": "auto_text_key", "code":  233, "label": "é" },
-        { "$": "auto_text_key", "code":  232, "label": "è" },
-        { "$": "auto_text_key", "code":  235, "label": "ë" }
+        { "$": "IME_UI_MODE_MEDIA", "code": -212, "label": "" },
+        {
+          "$": "auto_text_key",
+          "code": 51,
+          "label": "3"
+        }
+      ]
+    },
+    "g": {
+      "relevant": [
+        { "$": "SETTINGS", "code": -301, "label": "" }
       ]
     },
     "i": {
       "relevant": [
-        { "$": "auto_text_key", "code":  236, "label": "ì" },
-        { "$": "auto_text_key", "code":  239, "label": "ï" },
-        { "$": "auto_text_key", "code":  237, "label": "í" },
-        { "$": "auto_text_key", "code":  238, "label": "î" },
-        { "$": "auto_text_key", "code":  299, "label": "ī" }
+        {
+          "$": "auto_text_key",
+          "code": 56,
+          "label": "8"
+        }
       ]
     },
-    "n": {
+    "l": {
       "relevant": [
-        { "$": "auto_text_key", "code":  241, "label": "ñ" },
-        { "$": "auto_text_key", "code":  324, "label": "ń" }
+        { "$": "TOGGLE_SMARTBAR_VISIBILITY", "code": -241, "label": "↑" }
+      ]
+    },
+    "m": {
+      "relevant": [
+        { "$": "auto_text_key", "code":  62, "label": ">" },
+        { "$": "auto_text_key", "code":  125, "label": "}" },
+        { "$": "auto_text_key", "code":  93, "label": "]" },
+        { "$": "auto_text_key", "code":  47, "label": "/" },
+        { "$": "auto_text_key", "code":  41, "label": ")" }
       ]
     },
     "o": {
       "relevant": [
-        { "$": "auto_text_key", "code":  245, "label": "õ" },
-        { "$": "auto_text_key", "code":  333, "label": "ō" },
-        { "$": "auto_text_key", "code":  339, "label": "œ" },
-        { "$": "auto_text_key", "code":  248, "label": "ø" },
-        { "$": "auto_text_key", "code":  242, "label": "ò" },
-        { "$": "auto_text_key", "code":  246, "label": "ö" },
-        { "$": "auto_text_key", "code":  243, "label": "ó" },
-        { "$": "auto_text_key", "code":  244, "label": "ô" }
+        {
+          "$": "auto_text_key",
+          "code": 57,
+          "label": "9"
+        }
+      ]
+    },
+    "p": {
+      "relevant": [
+        { "$": "MOVE_END_OF_PAGE", "code": -26, "label": "⇘" },
+        { "$": "MOVE_END_OF_LINE", "code": -28, "label": "⇒" },
+        {
+          "$": "auto_text_key",
+          "code": 48,
+          "label": "0"
+        }
+      ]
+    },
+    "q": {
+      "relevant": [
+        {
+          "$": "auto_text_key",
+          "code": 49,
+          "label": "1"
+        },
+        { "$": "MOVE_START_OF_LINE", "code": -27, "label": "⇐" },
+        { "$": "MOVE_START_OF_PAGE", "code": -25, "label": "⇖" }
+      ]
+    },
+    "r": {
+      "relevant": [
+        {
+          "$": "auto_text_key",
+          "code": 52,
+          "label": "4"
+        },
+        { "$": "REDO", "code": -132, "label": "" }
       ]
     },
     "s": {
       "relevant": [
-        { "$": "auto_text_key", "code":  223, "label": "ß" }
+        { "$": "auto_text_key", "code":  42, "label": "*" },
+        { "$": "auto_text_key", "code":  45, "label": "-" },
+        { "$": "auto_text_key", "code":  95, "label": "_" },
+        { "$": "auto_text_key", "code":  61, "label": "=" },
+        { "$": "auto_text_key", "code":  43, "label": "+" },
+        { "$": "auto_text_key", "code":  36, "label": "$" },
+        { "$": "auto_text_key", "code":  63, "label":  "?" },
+        { "$": "auto_text_key", "code":  33, "label": "!" },
+        { "$": "auto_text_key", "code":  64, "label": "@" },
+        { "$": "auto_text_key", "code":  35, "label": "#" },
+        { "$": "auto_text_key", "code":  37, "label": "%" },
+        { "$": "auto_text_key", "code":  38, "label": "&" }
+      ]
+    },
+    "t": {
+      "relevant": [
+        {
+          "$": "auto_text_key",
+          "code": 53,
+          "label": "5"
+        }
       ]
     },
     "u": {
       "relevant": [
-        { "$": "auto_text_key", "code":  250, "label": "ú" },
-        { "$": "auto_text_key", "code":  363, "label": "ū" },
-        { "$": "auto_text_key", "code":  252, "label": "ü" },
-        { "$": "auto_text_key", "code":  251, "label": "û" },
-        { "$": "auto_text_key", "code":  249, "label": "ù" }
+        { "$": "UNDO", "code": -131, "label": "" },
+        {
+          "$": "auto_text_key",
+          "code": 55,
+          "label": "7"
+        }
+      ]
+    },
+    "v": {
+      "relevant": [
+        { "$": "IME_UI_MODE_CLIPBOARD", "code":  -213, "label": "" },
+        { "$": "CLIPBOARD_SELECT_ALL", "code":  -35, "label": "" },
+        { "$": "CLIPBOARD_PASTE", "code":  -33, "label": "" }
+      ]
+    },
+    "w": {
+      "relevant": [
+        {
+          "$": "auto_text_key",
+          "code": 50,
+          "label": "2"
+        }
+      ]
+    },
+    "y": {
+      "relevant": [
+        {
+          "$": "auto_text_key",
+          "code": 54,
+          "label": "6"
+        }
+      ]
+    },
+    "z": {
+      "relevant": [
+        { "$": "auto_text_key", "code":  40, "label": "(" },
+        { "$": "auto_text_key", "code":  92, "label": "\\" },
+        { "$": "auto_text_key", "code":  91, "label": "[" },
+        { "$": "auto_text_key", "code":  123, "label": "{" },
+        { "$": "auto_text_key", "code":  60, "label": "<" }
       ]
     },
     "~right": {
       "main": { "code":   44, "label": "," },
       "relevant": [
-        { "code":   38, "label": "&" },
-        { "code":   37, "label": "%" },
-        { "code":   43, "label": "+" },
-        { "code":   34, "label": "\"" },
-        { "code":   45, "label": "-" },
-        { "code":   58, "label": ":" },
-        { "code":   39, "label": "'" },
-        { "code":   64, "label": "@" },
-        { "code":   59, "label": ";" },
-        { "code":   47, "label": "/" },
-        { "$": "layout_direction_selector",
-          "ltr": { "code":   40, "label": "(" },
-          "rtl": { "code":   41, "label": "(" }
-        },
-        { "$": "layout_direction_selector",
-          "ltr": { "code":   41, "label": ")" },
-          "rtl": { "code":   40, "label": ")" }
-        },
-        { "code":   35, "label": "#" },
-        { "code":   33, "label": "!" },
-        { "code":   63, "label": "?" }
+        { "$": "auto_text_key", "code":  63, "label":  "?" },
+        { "$": "auto_text_key", "code":  33, "label": "!" }
       ]
     }
   },

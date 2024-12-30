@@ -1,226 +1,217 @@
 {
   "@defines": {
-    "--primary": "#388e3c",
-    "--primary-variant": "#306d32",
-    "--secondary": "#ff9800",
-    "--secondary-variant": "#804c00",
-    "--background": "#000000",
-    "--surface": "#212121",
-    "--surface-variant": "#3d3d3d",
-
-    "--on-background": "#eeeeee",
-    "--on-surface": "#eeeeee",
-    "--on-surface-variant": "#ffffff73",
-
+    "--primary": "#000000",
+    "--secondary": "#ffffff",
+    "--disabled": "#888888",
+    "--background": "var(--primary)",
+    "--hidden": "transparent",
     "--shape": "rounded-corner(8dp, 8dp, 8dp, 8dp)",
-    "--shape-variant": "rounded-corner(12dp, 12dp, 12dp, 12dp)"
+    "--shape-variant": "rounded-corner(12dp, 12dp, 12dp, 12dp)",
+    "--shadow-elevation": "4dp",
+    "--font-size": "40sp",
+    "--font-size-2": "20sp",
+    "--font-size-3": "18sp",
+    "--font-size-4": "16sp",
+    "--font-size-5": "14sp"
   },
-
   "keyboard": {
-    "background": "var(--background)"
+    "background": "var(--primary)"
   },
-
   "key": {
-    "background": "transparent",
-    "foreground": "var(--on-surface)",
-    "font-size": "22sp",
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size)",
     "shape": "var(--shape)"
   },
   "key:pressed": {
-    "background": "#6161617f",
-    "foreground": "var(--on-surface)"
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)"
   },
   "key[code={c:enter}]": {
     "background": "var(--primary)",
-    "foreground": "var(--on-surface)"
-  },
-  "key[code={c:enter}]:pressed": {
-    "background": "var(--primary-variant)",
-    "foreground": "var(--on-surface)"
-  },
-  "key[code={c:shift}][shiftstate={sh:caps_lock}]": {
     "foreground": "var(--secondary)"
   },
+  "key[code={c:enter}]:pressed": {
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)"
+  },
+  "key[code={c:shift}][shiftstate={sh:caps_lock}]": {
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)"
+  },
   "key[code={c:space}]": {
-    "background": "#61616146",
-    "foreground": "var(--on-surface-variant)",
-    "font-size": "12sp"
+    "background": "var(--hidden)",
+    "foreground": "var(--hidden)",
+    "font-size": "var(--font-size-5)"
   },
   "key-hint": {
-    "background": "transparent",
-    "foreground": "var(--on-surface-variant)",
-    "font-size": "12sp"
+    "background": "var(--hidden)",
+    "foreground": "var(--foreground)",
+    "font-size": "var(--font-size-5)"
   },
   "key-popup": {
-    "background": "#363636",
-    "foreground": "var(--on-surface)",
-    "font-size": "22sp",
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)",
+    "font-size": "var(--font-size)",
     "shape": "var(--shape)",
-    "shadow-elevation": "2dp"
+    "shadow-elevation": "var(--shadow-elevation)"
   },
   "key-popup:focus": {
-    "background": "#5F5F5F",
-    "foreground": "var(--on-surface)"
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)"
   },
-
   "smartbar-shared-actions-toggle": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)",
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
     "shape": "circle()",
-    "shadow-elevation": "2dp"
+    "shadow-elevation": "var(--shadow-elevation)"
   },
   "smartbar-extended-actions-toggle": {
-    "background": "transparent",
-    "foreground": "var(--on-surface-variant)",
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
     "shape": "circle()"
   },
   "smartbar-action-key": {
-    "background": "transparent",
-    "foreground": "var(--on-background)",
-    "font-size": "18sp",
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-2)",
     "shape": "var(--shape)"
   },
   "smartbar-action-key:pressed": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)"
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)"
   },
   "smartbar-action-key:disabled": {
-    "background": "transparent",
-    "foreground": "#dcdcdc48"
+    "background": "var(--hidden)",
+    "foreground": "var(--disabled)"
   },
   "smartbar-action-tile": {
-    "background": "transparent",
-    "foreground": "var(--on-background)",
-    "font-size": "18sp",
+    "background": "var(--hidden)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-2)",
     "shape": "var(--shape)"
   },
   "smartbar-action-tile:pressed": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)"
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)"
   },
   "smartbar-action-tile:disabled": {
-    "background": "transparent",
-    "foreground": "#dcdcdc48"
+    "background": "var(--hidden)",
+    "foreground": "var(--disabled)"
   },
   "smartbar-actions-overflow-customize-button": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)",
-    "font-size": "14sp",
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-4)",
     "shape": "circle()",
-    "shadow-elevation": "2dp"
+    "shadow-elevation": "var(--shadow-elevation)"
   },
   "smartbar-actions-editor": {
-    "background": "var(--background)",
+    "background": "var(--primary)",
     "shape": "rounded-corner(24dp, 24dp, 0dp, 0dp)"
   },
   "smartbar-actions-editor-header": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)",
-    "font-size": "16sp"
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-3)"
   },
   "smartbar-actions-editor-subheader": {
-    "foreground": "var(--on-background)",
-    "font-size": "16sp"
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-3)"
   },
   "smartbar-candidate-word": {
-    "background": "transparent",
-    "foreground": "var(--on-background)",
-    "font-size": "14sp",
+    "background": "var(--hidden)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-4)",
     "shape": "rectangle()"
   },
   "smartbar-candidate-word:pressed": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-background)"
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)"
   },
   "smartbar-candidate-clip": {
-    "background": "transparent",
-    "foreground": "var(--on-background)",
-    "font-size": "14sp",
+    "background": "var(--hidden)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-4)",
     "shape": "rounded-corner(8%, 8%, 8%, 8%)"
   },
   "smartbar-candidate-clip:pressed": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-background)"
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)"
   },
   "smartbar-candidate-spacer": {
-    "foreground": "var(--surface)"
+    "foreground": "var(--secondary)"
   },
-
   "clipboard-header": {
-    "background": "transparent",
-    "foreground": "var(--on-surface)",
-    "font-size": "16sp"
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-3)"
   },
   "clipboard-item": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)",
-    "font-size": "14sp",
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-4)",
     "shape": "var(--shape-variant)",
-    "shadow-elevation": "2dp"
+    "shadow-elevation": "var(--shadow-elevation)"
   },
   "clipboard-item-popup": {
-    "background": "var(--surface-variant)",
-    "foreground": "var(--on-surface)",
-    "font-size": "14sp",
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)",
+    "font-size": "var(--font-size-4)",
     "shape": "var(--shape-variant)",
-    "shadow-elevation": "2dp"
+    "shadow-elevation": "var(--shadow-elevation)"
   },
-
   "emoji-key": {
-    "background": "transparent",
-    "foreground": "var(--on-background)",
-    "font-size": "22sp",
+    "background": "var(--hidden)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size)",
     "shape": "var(--shape)"
   },
   "emoji-key:pressed": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)"
-  },
-  "emoji-key-popup": {
-    "background": "#757575",
-    "foreground": "var(--on-surface)",
-    "font-size": "22sp",
-    "shape": "var(--shape)",
-    "shadow-elevation": "2dp"
-  },
-  "emoji-tab": {
-    "foreground": "var(--on-background)"
-  },
-  "emoji-tab:focus": {
+    "background": "var(--secondary)",
     "foreground": "var(--primary)"
   },
-
+  "emoji-key-popup": {
+    "background": "var(--secondary)",
+    "foreground": "var(--primary)",
+    "font-size": "var(--font-size)",
+    "shape": "var(--shape)",
+    "shadow-elevation": "var(--shadow-elevation)"
+  },
+  "emoji-tab": {
+    "foreground": "var(--secondary)"
+  },
+  "emoji-tab:focus": {
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)"
+  },
   "extracted-landscape-input-layout": {
-    "background": "var(--background)"
+    "background": "var(--primary)"
   },
   "extracted-landscape-input-field": {
-    "background": "transparent",
-    "foreground": "var(--on-background)",
-    "font-size": "16sp",
+    "background": "var(--hidden)",
+    "foreground": "var(--secondary)",
+    "font-size": "var(--font-size-3)",
     "shape": "rounded-corner(12dp, 12dp, 12dp, 12dp)",
-    "border-color": "var(--secondary-variant)",
-    "border-width": "1dp"
+    "border-color": "var(--secondary)",
+    "border-width": "2dp"
   },
   "extracted-landscape-input-action": {
-    "background": "var(--surface)",
-    "foreground": "var(--on-surface)",
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)",
     "shape": "rounded-corner(4dp, 4dp, 4dp, 4dp)"
   },
-
   "glide-trail": {
-    "foreground": "var(--primary-variant)"
+    "foreground": "var(--secondary)"
   },
-
   "incognito-mode-indicator": {
-    "foreground": "#ffffff11"
+    "foreground": "var(--secondary)"
   },
-
   "one-handed-panel": {
-    "background": "#000000",
-    "foreground": "#eeeeee"
+    "background": "var(--primary)",
+    "foreground": "var(--secondary)"
   },
-
   "system-nav-bar": {
-    "background": "var(--background)"
+    "background": "var(--primary)"
   }
 }
